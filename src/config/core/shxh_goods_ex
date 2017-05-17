@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema name="shxh_goods_ex" version="1.6">
+    <field name="id" type="int" indexed="true" stored="true" multiValued="false" required="true"/>
+    <field name="goodcode" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="remark" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="replenishstate" type="int" indexed="true" stored="true" multiValued="false"/>
+    <field name="pulishstate" type="int" indexed="true" stored="true" multiValued="false"/>
+    <field name="pulishstatebz" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="enteruser" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="recordno" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="notifytype" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="merchantid" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="price" type="double" indexed="true" stored="true" multiValued="false"/>
+    <field name="priceunit" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="pubplace" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="author" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="isbn" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="publisher" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="bookname" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="introduction" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="readers" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="chargeeditor" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="edition" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="impression" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="ztclassify" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="pubdate" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="editionno" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="tax" type="int" indexed="true" stored="true" multiValued="false"/>
+    <field name="barcode" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="goodscoding" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="enteringstate" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="updateman" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="replenishupdatetime" type="tdate" indexed="true" stored="true" multiValued="false" />
+    <field name="oldupdateman" type="string" indexed="true" stored="true" multiValued="false" />
+    <field name="enteringdate" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="editionname" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="bookreleasedate" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="createtime" type="tdate" indexed="true" stored="true" multiValued="false"/>
+    <field name="updatetime" type="tdate" indexed="true" stored="true" multiValued="false"/>
+    <field name="isdelete" type="int" indexed="true" stored="true" multiValued="false"/>
+    <field name="spxxidlist" type="multival" indexed="true" stored="true" multiValued="true" default=""/>
+    <field name="spxxid" type="string" indexed="true" stored="true" multiValued="false" default=""/>
+    <field name="newbarcode" type="string" indexed="true" stored="true" multiValued="false" default=""/>
+    <uniqueKey>id</uniqueKey>
+
+    <fieldType name="int" value="java.lang.Integer" />
+    <fieldType name="float" value="java.lang.Float" />
+    <fieldType name="long" value="java.lang.Long" />
+    <fieldType name="double" value="java.lang.Double" />
+    <fieldType name="string" value="java.lang.String" />
+    <fieldType name="boolean" value="java.lang.Boolean" />
+    <fieldType name="tint" value="java.lang.Integer" />
+    <fieldType name="tfloat" value="java.lang.Float" />
+    <fieldType name="tlong" value="java.lang.Long" />
+    <fieldType name="tdouble" value="java.lang.Double" />
+    <fieldType name="date" value="java.util.Date" />
+    <fieldType name="tdate" value="java.util.Date" />
+    <fieldType name="text_general" value="java.lang.String" />
+    <fieldType name="multival" value="java.lang.String" />
+
+</schema>

@@ -1,0 +1,13 @@
+web\controller\SolrController.class
+service\solrclient\SolrDynamicClient.class
+web\authorization\HTTPBasicAuthorizeAttribute.class
+web\swagger\Swagger2Config.class
+web\controller\BaseController.class
+service\solrclient\SolrService.class
+web\authorization\model\ResultMsg.class
+web\Application.class
+web\authorization\model\ResultStatusCode.class
+service\solrclient\SolrDynamicClient$PreemptiveAuthInterceptor.class
+service\solrclient\ISolrClient.class
+container\xml\XmlHelper.class
+container\reflect\ReflectHelper.class

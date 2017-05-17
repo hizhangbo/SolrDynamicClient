@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schema name="shxh_spxx" version="1.6">
+    <field name="id" type="long" indexed="true" stored="true" multiValued="false" required="true"/>
+    <field name="dj" type="tdouble" indexed="true" stored="true" multiValued="false"/>
+    <field name="pm" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="isbn" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="spxxid" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="len" type="int" indexed="true" stored="true" multiValued="false" default="0"/>
+    <field name="csm" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="zz" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="sdhrq" type="tdate" indexed="true" stored="true" multiValued="false"/>
+    <field name="cbny" type="tint" indexed="true" stored="true" multiValued="false"/>
+    <field name="cbn" type="tint" indexed="true" stored="true" multiValued="false"/>
+    <field name="cbsid" type="string" indexed="true" stored="true" multiValued="false"/>
+    <field name="bc" type="string" indexed="true" stored="true" multiValued="false"/>
+    <uniqueKey>id</uniqueKey>
+
+    <fieldType name="int" value="java.lang.Integer" />
+    <fieldType name="float" value="java.lang.Float" />
+    <fieldType name="long" value="java.lang.Long" />
+    <fieldType name="double" value="java.lang.Double" />
+    <fieldType name="string" value="java.lang.String" />
+    <fieldType name="boolean" value="java.lang.Boolean" />
+    <fieldType name="tint" value="java.lang.Integer" />
+    <fieldType name="tfloat" value="java.lang.Float" />
+    <fieldType name="tlong" value="java.lang.Long" />
+    <fieldType name="tdouble" value="java.lang.Double" />
+    <fieldType name="date" value="java.util.Date" />
+    <fieldType name="tdate" value="java.util.Date" />
+    <fieldType name="text_general" value="java.lang.String" />
+
+</schema>

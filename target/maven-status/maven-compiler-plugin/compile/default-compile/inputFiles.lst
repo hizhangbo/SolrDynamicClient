@@ -1,0 +1,12 @@
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\web\controller\SolrController.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\web\controller\BaseController.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\service\solrclient\SolrDynamicClient.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\service\solrclient\ISolrClient.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\web\authorization\HTTPBasicAuthorizeAttribute.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\web\authorization\model\ResultMsg.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\container\reflect\ReflectHelper.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\web\swagger\Swagger2Config.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\web\Application.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\web\authorization\model\ResultStatusCode.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\service\solrclient\SolrService.java
+D:\projects\SolrDynamicClient\SolrDynamicClient\src\container\xml\XmlHelper.java
