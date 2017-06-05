@@ -12,6 +12,8 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
+import container.file.FileHelper;
+
 public class XmlHelper {
 	
 	private String Core_Config_Path;
@@ -32,6 +34,7 @@ public class XmlHelper {
                 }
             }
         }
+
         return cores;
 	}
 	

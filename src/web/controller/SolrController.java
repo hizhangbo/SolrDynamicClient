@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import container.file.FileHelper;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -29,7 +30,7 @@ public class SolrController extends BaseController {
 	@ApiImplicitParam(name = "core",value = "core", dataType = "String", paramType = "path")
     @RequestMapping(value = "/get", method = RequestMethod.GET)
     public Object get(@PathVariable("core") String core) {
-    	
+    	FileHelper.PrintTextFile("debug.text", "访问get：" + core);
     	if(CheckCore(core)){
         	SolrService solrService = new SolrService(core);    	
             return solrService.GetModel();    		

@@ -74,6 +74,12 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <encoding>UTF-8</encoding>
+          <!-- 解决BASE64Decoder是Sun的专用API，可能会在未来版本中删除 的错误 -->
+	      <compilerArguments>  
+	        <verbose />  
+	        <bootclasspath>${java.home}/lib/rt.jar</bootclasspath>  
+	      </compilerArguments>
         </configuration>
       </plugin>
       
@@ -88,7 +94,7 @@
       <plugin>
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-maven-plugin</artifactId>
-
+         <version>1.5.3.RELEASE</version>
          <configuration>
             <mainClass>web.Application</mainClass>
          </configuration>
@@ -96,5 +102,26 @@
       
     </plugins>
     
+    <resources>
+		<resource>
+		   <directory>src/config</directory>
+		   <targetPath>config</targetPath>
+		   <includes>
+            <include>**/*.properties</include>  
+            <include>**/*.xml</include>
+		   </includes>
+		   <filtering>true</filtering>
+		</resource>
+
+		<resource>
+		   <directory>src/config/core</directory>
+		   <targetPath>config/core</targetPath>
+		   <includes>
+            <include>**/*</include>  
+            <include>**/*</include>
+		   </includes>
+		   <filtering>true</filtering>
+		</resource>  
+    </resources>
   </build>
 </project>

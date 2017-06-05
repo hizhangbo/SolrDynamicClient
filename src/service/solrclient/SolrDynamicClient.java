@@ -27,6 +27,7 @@ import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.dom4j.Document;
 import org.dom4j.Element;
 
+import container.file.FileHelper;
 import container.xml.XmlHelper;
 
 public class SolrDynamicClient implements ISolrClient {
@@ -84,7 +85,6 @@ public class SolrDynamicClient implements ISolrClient {
         CloseableHttpClient httpClient = builder.build();
 
         solrClient = new HttpSolrClient.Builder(host + '/' + core).withHttpClient(httpClient).build();
-		
 	}
 	
     static class PreemptiveAuthInterceptor implements HttpRequestInterceptor {
